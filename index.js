@@ -45,7 +45,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-    if (cart.findIndex(item => item.itemName) === - 1) {
+    if (cart.findIndex(x => item.itemName) === - 1) {
     return "That item is not in your cart.";
   }
   const updated=cart.splice(cart.findIndex(item => item.itemName));
