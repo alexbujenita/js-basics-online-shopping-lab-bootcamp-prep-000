@@ -45,8 +45,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  console.log(cart.indexOf(item), 'asd' )
-  if (cart.indexOf(item) === - 1) {
+    if (!cart.findIndex(item => item.itemName)) {
     return "That item is not in your cart.";
   }
   const updated=cart.splice(cart.indexOf(item), 1);
