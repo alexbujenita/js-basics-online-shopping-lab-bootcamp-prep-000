@@ -45,15 +45,15 @@ function total() {
 }
 
 function removeFromCart(item) {
-  const index = cart.findIndex(x => x.itemName === 'item');
+  const index = cart.findIndex(x => x.itemName === item);
   console.log(index);
     if (index === - 1) {
     return "That item is not in your cart.";
   }
-  const updated=cart.splice(index, 1);
+  cart.splice(index, 1);
 console.log(updated, "here");
 
-  return updated;
+  return cart;
 }
 
 function placeOrder(cardNumber) {
