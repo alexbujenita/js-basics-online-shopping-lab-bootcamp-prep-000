@@ -50,7 +50,7 @@ function removeFromCart(item) {
   }
   const updated=cart.splice(cart.indexOf(item), 1);
 console.log(updated, "here");
-  
+
   return updated;
 }
 
