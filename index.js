@@ -49,7 +49,8 @@ function removeFromCart(item) {
     return "That item is not in your cart.";
   }
   const updated=cart.splice(cart.indexOf(item), 1);
-  console.log(updated);
+console.log(updated, "here");
+  
   return updated;
 }
 
