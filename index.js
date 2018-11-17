@@ -57,7 +57,7 @@ function removeFromCart(item) {
   //   return "That item is not in your cart.";
   // }
   // const temp = cart.splice(index, 1);
-  // 
+  //
   // return cart;
 }
 
