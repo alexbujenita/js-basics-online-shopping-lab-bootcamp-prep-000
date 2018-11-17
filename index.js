@@ -64,5 +64,10 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
+  if (!cardNumber) {
+    return "Sorry, we don't have a credit card on file for you.";
+  }
+  cart.length = 0;
+  return `Your total cost is ${total()}, which will be charged to the card 83296759.`
   // write your code here
 }
